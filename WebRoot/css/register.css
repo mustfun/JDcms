@@ -1,0 +1,24 @@
+.register{
+	position:absolute;
+	left: 99px;
+	top: 90px;
+	width: 372px;
+	height: 103px;
+	font-family: "ËÎÌו";
+	font-size: 32px;
+}
+.register_head{
+	position:absolute;
+	left: 190px;
+	top: 73px;
+}
+.table{
+	position:absolute;
+	left: 97px;
+	top: 197px;
+	width: 867px;
+	height: 578px;
+}
+.yanzhengma{
+color:red;
+}

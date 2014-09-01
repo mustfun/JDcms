@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+    <form-bean name="userForm" type="com.dzy.struts.form.UserForm" />
+	<form-bean name="appForm" type="com.dzy.struts.form.AppForm" />
+    <form-bean name="adminForm" type="com.dzy.struts.form.AdminForm" />
+  </form-beans>
+
+
+  <action-mappings >
+  
+    <action
+      attribute="userForm"
+      input="/WEB-INF/register.jsp"
+      name="userForm"
+      parameter="flag"
+      path="/login"
+      scope="request"
+      type="com.dzy.struts.action.LoginAction"
+      cancellable="true">
+      <forward name="loginerr" path="/WEB-INF/login.jsp" />
+      
+      
+      
+      <forward name="registerok" path="/WEB-INF/main.jsp" />
+      <forward name="loginok" path="/showApp.do?flag=showmain" />
+      
+    </action>
+
+    <action
+      input="/WEB-INF/main.jsp"
+      parameter="flag"
+      path="/toLogin"
+      type="com.dzy.struts.action.ToLoginAction"
+      cancellable="true" >
+      <forward name="tologin" path="/WEB-INF/login.jsp" />
+      <forward name="toregister" path="/WEB-INF/register.jsp" />
+    </action>
+    
+    <action
+      input="/WEB-INF/main.jsp"
+      parameter="flag"
+      path="/tohome"
+      type="com.dzy.struts.action.TohomeAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="tohome" path="/WEB-INF/homepage.jsp" />
+      <forward name="searchok" path="/WEB-INF/searchresult.jsp" />
+    </action>
+    
+    <action
+      input="/WEB-INF/main.jsp"
+      parameter="flag"
+      path="/showApp"
+      type="com.dzy.struts.action.ShowAppAction"
+      validate="false"
+      cancellable="true">
+      <forward name="showmain" path="/WEB-INF/main.jsp" />
+      <forward name="showappinfo" path="/WEB-INF/appinfo.jsp" />
+      <forward name="gotoaboutwebsite" path="/WEB-INF/aboutwebsite.jsp" />
+    </action>
+    
+    <action
+      attribute="appForm"
+      input="/WEB-INF/private/uploadapp.jsp"
+      name="appForm"
+      parameter="flag"
+      path="/upload"
+      scope="request"
+      type="com.dzy.struts.action.UploadAction"
+      validate="false"
+      cancellable="true">
+      <forward name="uploadok" path="/WEB-INF/ok.jsp" />
+      <forward name="upload" path="/WEB-INF/private/uploadapp.jsp" />
+    </action>
+    <action
+      input="/WEB-INF/main.jsp"
+      parameter="flag"
+      path="/apptype"
+      type="com.dzy.struts.action.ApptypeAction"
+      cancellable="true" >
+      <forward name="gototypeok" path="/WEB-INF/apptype.jsp" />
+      <forward name="gotolatestok" path="/WEB-INF/latestApp.jsp" />
+      <forward name="gotorecommend" path="/WEB-INF/recommend.jsp" />
+      <forward name="gotomostdown" path="/WEB-INF/mostdownapp.jsp" />
+      
+    </action>
+    <action
+      attribute="adminForm"
+      name="adminForm"
+      parameter="flag"
+      path="/admin"
+      scope="request"
+      type="com.dzy.struts.action.AdminAction"
+      cancellable="true">
+      <forward name="gotoadminlogin" path="/WEB-INF/private/adminlogin.jsp" />
+      <forward name="adminloginok" path="/WEB-INF/private/adminMain.jsp" />
+      <forward name="gotonextapp" path="/WEB-INF/private/manageallapp.jsp" />
+      <forward name="gotonextcomment" path="/WEB-INF/private/manageallcomment.jsp" />
+      <forward name="gotonextuser" path="/WEB-INF/private/managealluser.jsp" />
+      <forward name="deleteuserok" path="/admin.do?flag=gotonextuser"	/>
+      <forward name="deleteappok" path="/admin.do?flag=gotonextapp"	/>
+      <forward name="deletecommentok" path="/admin.do?flag=gotonextcomment"	/>
+      
+    </action>
+
+
+
+
+
+    
+
+
+  </action-mappings>
+  
+  <!-- 这句话没有直接导致action调用service失败 -->
+  <!-- 让spring接管我们的struts,这里配置代理请求,跑到spring中去找action -->
+					<controller>
+											<set-property property="processorClass"  value="org.springframework.web.struts.DelegatingRequestProcessor"/>
+					</controller>
+
+  <message-resources parameter="com.dzy.struts.ApplicationResources" />
+</struts-config>
+

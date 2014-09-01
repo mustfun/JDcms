@@ -1,0 +1,113 @@
+.struts{
+	position:absolute;
+	left: 229px;
+	top: 221px;
+	width: 896px;
+	
+}
+.app_table{
+	position:absolute;
+	width: 893px;
+	height: 148px;
+	left: 0px;
+	top: 1px;
+}
+.app_icon{
+float:left;
+	width: 76px;
+	height: 74px;
+}
+
+.app_name{
+	float:left;
+	font-family:"Î¢ÈíÑÅºÚ";
+	font-size:16px;
+	width: 220px;
+	height: 28px;
+	color:#669900;
+	
+}
+.app_shortdesc{
+	width: 500px;
+	height: 39px;
+	font-size:24px;
+	color:#00BFFF;
+}
+.down_adress{
+float:left;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+margin-left:350px;
+	width: 159px;
+	height: 51px;
+	text-align:center;
+	color:white;
+	background-color:#1AA5EB;
+	font-size:30px;
+	line-height:40px;
+	margin-top:20px;
+}
+.down_adress a{
+	color: white;
+}
+
+.down_adress a:HOVER{
+	color: red;
+}
+
+.fanye{
+	position:absolute;
+	left: 594px;
+	top: 653px;
+	height: 41px;
+	width: 276px;
+}
+.shangyiye{
+	position:absolute;
+	background-color:#1A99FA;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	left: 2px;
+	height: 39px;
+	width: 59px;
+	color:#FFFFFF;
+	text-align:center;
+	line-height:35px;
+	font-size:16px;
+	font-weight:600;
+}
+.shangyiye a{
+	color: white;
+}
+.xiayiye{
+	position:absolute;
+	background-color:#1A99FA;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	left: 219px;
+	top: 1px;
+	height: 40px;
+	color:#FFFBF0;
+	width: 55px;
+	font-weight:600;
+	text-align:center;
+	font-size:16px;
+	line-height:35px;
+}
+.xiayiye a{
+	color: white;
+}
+.yema{
+	position:absolute;
+	text-align:center;
+	line-height:30px;
+	font-weight:bold;
+	left: 84px;
+	top: -1px;
+	width: 34px;
+	height: 31px;
+	border-radius: 50%;  
+	border: solid 5px #1A99FA;  
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.2);  
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);  
+}

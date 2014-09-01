@@ -1,0 +1,107 @@
+.logo{
+	position:absolute;
+	width: 198px;
+	height: 50px;
+	left: 78px;
+	top: 8px;
+}
+.sousuo{
+	position:absolute;
+	left: 302px;
+	top: 17px;
+	height: 32px;
+	width: 443px;
+}
+.logo_pan{
+	position:absolute;
+	top: 68px;
+	left: 303px;
+	height: 28px;
+	width: 499px;
+	color:#BAB2CA;
+	font-size:15px;
+}
+.login{
+	position:absolute;
+	font-size:24px;
+	color:#BAB2CA;
+	left: 950px;
+	top: 21px;
+	height: 32px;
+	width: 300px;
+}
+a{
+text-decoration:none;
+color: #2A0055;}
+a:hover{
+text-decoration:underline;
+color:#FF0000;}
+.biaoti{
+	position:absolute;
+	left: 72px;
+	top: 107px;
+	height: 46px;
+	width: 1139px;
+	background-color:#1AA5EB;
+	text-align:center;
+	font-size:24px;
+	color:#FFFFFF;
+}
+.table{
+	position:absolute;
+	left: 74px;
+	top: 159px;
+	width: 223px;
+	height: 591px;
+}
+.tupianjiehuan{
+	position:absolute;
+	left: 306px;
+	top: 157px;
+	height: 284px;
+	width: 755px;
+}
+.tail{
+	position:absolute;
+	left: 70px;
+	top: 1193px;
+	height: 99px;
+	width: 1190px;
+}
+.mainbody{
+	position:absolute;
+	left: 70px;
+	top: 619px;
+	width: 1144px;
+	height: 504px;
+}
+.fubiaoti{
+	position:absolute;
+	left: 72px;
+	top: 581px;
+	height: 27px;
+	width: 1139px;
+	color:#1AA5EB;
+	font-size:24px;
+}
+.fubiaoti a{
+	color:#1AA5EB;
+}
+.guanliyuan{
+	position:absolute;
+	left: 950px;
+	top: 64px;
+	width: 102px;
+	height: 31px;
+}
+.autocut{
+overflow: hidden;
+
+}
+.biaoti a{
+	color: white;
+}
+.biaoti a:HOVER {
+	color: red;
+	text-decoration: none;
+}

@@ -1,0 +1,31 @@
+.kuagnjia{
+	position:absolute;
+	left: 255px;
+	width: 738px;
+	height: 717px;
+	top: 256px;
+	border:solid 1px silver;
+}
+.textjieshao{
+	position:absolute;
+	left: 196px;
+	top: 24px;
+	width: 342px;
+	height: 59px;
+	text-align:center;
+	line-height:50px;
+	font-size:30px;
+	color:#007FFF;
+	font-family: "Î¢ÈíÑÅºÚ"
+}
+.textbody{
+	position:absolute;
+	left: 49px;
+	top: 103px;
+	width: 648px;
+	height: 590px;
+	
+	font-size:24px;
+	color:#007FFF;
+	font-family: "Î¢ÈíÑÅºÚ"
+}

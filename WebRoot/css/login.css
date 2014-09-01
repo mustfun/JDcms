@@ -1,0 +1,35 @@
+/* CSS Document */
+.first{
+	position:absolute;
+	left: 1001px;
+	top: 170px;
+	height: 24px;
+	width: 83px;
+}
+.username{
+	position:absolute;
+	left: 791px;
+	top: 235px;
+	height: 39px;
+	width: 259px;
+}
+.pwd{
+	position:absolute;
+	left: 791px;
+	top: 292px;
+	height: 38px;
+	width: 260px;
+}
+.login1{
+	position:absolute;
+	left: 753px;
+	top: 367px;
+	height: 55px;
+	width: 308px;
+}
+.logo{
+	position:absolute;
+	left: 81px;
+	top: 1px;
+	height: 51px;
+}

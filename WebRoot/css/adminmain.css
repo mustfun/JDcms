@@ -1,0 +1,87 @@
+.shangmian{
+height:80px;
+width:1366px;
+margin-left:-10px;
+margin-top:-10px;
+background-color:#F3F9FF;
+}
+.denglu{
+font-size:20px;
+font-family:"Î¢ÈíÑÅºÚ";
+}
+.denglu a{
+text-decoration:none;
+color: #2A0000;
+}
+.denglu a:hover{
+text-decoration:underline;
+color:red;}
+.daohang{
+	height:40px;
+	width:1366px;
+	background-color:#71828A;
+margin-left:-10px;
+margin-top:-10px;
+}
+.houtai{
+	margin-left:-10px;
+font-size:20px;
+font-family:"Î¢ÈíÑÅºÚ";
+}
+.shujuqu{
+	position: absolute;
+	width: 849px;
+	height: 261px;
+	left: 221px;
+	top: 231px;
+}
+.userdiv{
+display:block;
+}
+.appdiv{
+display:block;
+}
+.commentsdiv{
+display:block;
+}
+.xiayiye{
+	position:absolute;
+	left: 923px;
+	top: 514px;
+	width: 150px;
+	height: 36px;
+}
+
+
+
+.tail{
+	position:absolute;
+	height:80px;
+	width:1356px;
+	background-color:#E0E4E5;
+	left: 0px;
+	top: 584px;
+}
+.xiayiye a{
+color:#00DFFF;
+}
+
+.lianjie a{
+	color: #FF3FFF;
+	text-decoration: none;
+}
+.lianjie a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.autocut {  
+	height:50px;
+    overflow:hidden;    
+    text-overflow:ellipsis;    
+    -moz-text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+}
+.upload a{
+	color: #FF3FFF;
+	text-decoration: none;
+}

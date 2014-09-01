@@ -1,0 +1,30 @@
+/* CSS Document */
+
+.kuang{
+	position:absolute;
+	height: 909px;
+	left: 203px;
+	top: 202px;
+	width: 896px;
+}
+.touxiang{
+	position:absolute;
+	width: 203px;
+	height: 557px;
+	left: 0px;
+	top: 2px;
+}
+.middle{
+	position:absolute;
+	left: 207px;
+	top: 2px;
+	width: 686px;
+	height: 551px;
+}
+.right{
+	position:absolute;
+	left: 694px;
+	top: 2px;
+	height: 550px;
+	width: 202px;
+}
